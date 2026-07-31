@@ -1,16 +1,24 @@
-# React + Vite
+# AI Calendar-Syllabus 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered calendar app that reads your course syllabus and automatically builds your to-do list — no manual data entry required.
 
-Currently, two official plugins are available:
+## What It Does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Upload a syllabus (PDF, DOCX, or similar), and the app uses the OpenAI API to parse the document, detect major assignments and their due dates, and automatically add them to your calendar's to-do list. From there, you can view your schedule the way that works best for you.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📄 **Syllabus Upload & Parsing** — Upload a syllabus and let AI extract assignments, exams, and key dates
+- 🤖 **AI-Powered Extraction** — Uses the OpenAI API to identify major assignments and deadlines from unstructured document text
+- ✅ **Automatic To-Do List Generation** — Extracted dates are automatically added to your calendar's to-do list
+- 📅 **Multiple Calendar Views** — Switch between Monthly, Weekly, and Daily views
+- 🔔 **Chrome Extension (In Progress)** — Get browser notifications for upcoming assignments *(currently being added)*
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React (Vite)
+- **Languages:** JavaScript, CSS
+- **AI Integration:** OpenAI API
+- **Browser Extension:** Chrome Extension (popup + notifications) — *in development*
+
+
